@@ -1,11 +1,11 @@
-@import "modules/post/variables";
+@import 'modules/post/variables';
 @mixin galileo-post {
     .post::after {
         @include retina-background-image($img-separator);
         background-repeat: no-repeat;
         background-position: center bottom;
         background-color: transparent;
-        content: "";
+        content: '';
         width: 100%;
         max-width: 596px;
         height: 42px;
@@ -105,7 +105,7 @@
         font-size: 0;
 
         img,
-        video{
+        video {
             width: 100%;
             max-width: 100%;
             height: auto;
@@ -165,7 +165,7 @@
 
         &::after {
             display: block;
-            content: "";
+            content: '';
             width: 185px;
             margin: 23px auto 30px;
             border-bottom: 3px double $border-color;
@@ -216,7 +216,9 @@
             color: $legal-text-color;
 
             // However let the normal hover colour apply
-            &:hover { color: $hover-color; }
+            &:hover {
+                color: $hover-color;
+            }
         }
     }
 }

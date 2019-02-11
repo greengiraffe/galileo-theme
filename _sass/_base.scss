@@ -6,7 +6,9 @@ html {
 }
 
 /* Universal box-sizing as per https://css-tricks.com/box-sizing/ */
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     -webkit-box-sizing: inherit;
     -moz-box-sizing: inherit;
     box-sizing: inherit;
@@ -17,10 +19,10 @@ body {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
-    -webkit-font-feature-settings: "kern" 1;
-    -moz-font-feature-settings: "kern" 1;
-    -o-font-feature-settings: "kern" 1;
-    font-feature-settings: "kern" 1;
+    -webkit-font-feature-settings: 'kern' 1;
+    -moz-font-feature-settings: 'kern' 1;
+    -o-font-feature-settings: 'kern' 1;
+    font-feature-settings: 'kern' 1;
     font-kerning: normal;
     text-rendering: optimizeLegibility; /* Beware of performance issues in mobile - see https://css-tricks.com/almanac/properties/t/text-rendering/ */
     -webkit-font-smoothing: antialiased;
@@ -33,5 +35,5 @@ body {
 
 a {
     text-decoration: none;
-    color: #443E40;
+    color: #443e40;
 }

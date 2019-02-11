@@ -1,4 +1,4 @@
-@import "modules/pagination/variables";
+@import 'modules/pagination/variables';
 @mixin galileo-pagination {
     .pagination {
         @include clearfix;
@@ -20,11 +20,15 @@
         line-height: 21px;
 
         &:first-of-type {
-            a { border-right: 1px solid $pagination-border-color; }
+            a {
+                border-right: 1px solid $pagination-border-color;
+            }
         }
 
         &:last-of-type {
-            a { border-left: 1px solid $pagination-border-color; }
+            a {
+                border-left: 1px solid $pagination-border-color;
+            }
         }
 
         @include min-breakpoint($pagination-splitting-breakpoint) {
@@ -32,11 +36,15 @@
             line-height: 38px;
 
             &:first-of-type {
-                a { border-right: 0; }
+                a {
+                    border-right: 0;
+                }
             }
 
             &:last-of-type {
-                a { border-left: 0; }
+                a {
+                    border-left: 0;
+                }
             }
         }
     }
